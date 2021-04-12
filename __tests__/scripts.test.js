@@ -65,4 +65,11 @@ describe("TEMPLATE TEST", () => {
     const teaserText = myEntry.getTeaser();
     expect(teaserText.split(" ").length).toEqual(8);
   });
+
+  test("addEntry function adds an entry to the journal", () => {
+    const myJournal = new Journal()
+    const myEntry = new Entry("title","body")
+    myJournal.addEntry(myEntry)
+    expect(myJournal.entries.length).toEqual(1)
+  })
 });
