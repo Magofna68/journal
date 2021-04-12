@@ -8,14 +8,19 @@
       <div class="container-fluid">
         <div class="jumbotron"><h1>Journal</h1></div>
         <div class="container card p-5">
-          <label for="title">Journal Entry Title:</label>
-          <input type="text" class="form-control" id="title" required />
-          <label class="mt-3" for="body">Journal Entry Content:</label>
-          <textarea id="body" placeholder="Enter Text:" required></textarea>
-          <button class="btn btn-lg btn-block btn-outline-success mt-5">
-            Submit Journal Entry
-          </button>
+          <form>
+            <label for="title">Journal Entry Title:</label>
+            <input type="text" class="form-control" id="title" required />
+            <label class="mt-3" for="body">Journal Entry Content:</label>
+            <textarea id="body" placeholder="Enter Text:" required></textarea>
+            <button
+              class="btn btn-lg btn-block btn-outline-success mt-5 submit-button"
+            >
+              Submit Journal Entry
+            </button>
+          </form>
         </div>
+        <div class="container p-2 entries"></div>
       </div>
     </section>
   </body>

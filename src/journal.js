@@ -21,12 +21,10 @@ Entry.prototype.getTeaser = function () {
   const firstEightWordsString = firstEightWordsArray.join(" ");
   return firstEightWordsString;
 };
-// Entry("title","one two three")
-// wordsArray = ["one","two","three"]
-// wordsArray.length = 3
-
 export function Journal() {
   this.entries = [];
 }
 
-// https://jestjs.io/docs/expect
+Journal.prototype.addEntry = function (entry) {
+  this.entries.push(entry);
+};
