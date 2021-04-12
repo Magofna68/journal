@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>TITLE-HTML</title>
-</head>
-<body>
-  <section class="main">
-
-  </section>
-</body>
+  <head>
+    <title>JournalJS</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="container-fluid">
+        <div class="jumbotron"><h1>Journal</h1></div>
+        <div class="container card p-5">
+          <label for="title">Journal Entry Title:</label>
+          <input type="text" class="form-control" id="title" required />
+          <label class="mt-3" for="body">Journal Entry Content:</label>
+          <textarea id="body" placeholder="Enter Text:" required></textarea>
+          <button class="btn btn-lg btn-block btn-outline-success mt-5">
+            Submit Journal Entry
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
