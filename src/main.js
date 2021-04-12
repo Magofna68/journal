@@ -6,4 +6,4 @@ import "./css/styles.css";
 // import
 
 // $("section").text("TEST TEXT INPUT");
-console.log($);
+console.log($)
